@@ -1,0 +1,28 @@
+<?php
+/** @var Magento\Framework\View\Element\Template $block */?>
+<!-- Script -->
+<div data-bind="scope: 'ui-creator'">
+    <p data-bind="text: inputText()"></p>
+</div>
+<div class="test">
+    Hello World
+</div>
+<script type="text/x-magento-init">
+    {
+        "*" :{
+           "objectEditor": {},
+           "dataPassing": {},
+           "Magento_Ui/js/core/app": {
+                "components": {
+                    "ui-creator": {
+                        "component": "Magento_Theme/js/ui-creator"
+                    }
+                }
+           }
+        }
+
+
+    }
+ </script>
+
+
